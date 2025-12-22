@@ -1,0 +1,155 @@
+
+  /* Headings */
+  .section-subtitle {
+    color: $pr-base;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: $dark-base;
+  position: relative;
+  padding-bottom: 10px; 
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #64a749, #149ab3);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+  }
+}
+
+
+
+.about-section {
+  background-color: #ffffff;
+
+
+  .section-desc {
+    color:$mute-base;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+  }
+
+  /* Skills */
+  .skill-item {
+    margin-bottom: 25px;
+
+    span {
+      font-weight: 500;
+      color: $dark-base;
+    }
+
+    .percent {
+      color:$mute-base;
+    }
+
+    /* Progress bar */
+    .custom-progress {
+      height: 10px;
+      background-color: $white;
+      border-radius: 30px;
+      margin-top: 8px;
+      overflow: hidden;
+
+      .progress-bar {
+        background-color: $pr-base;
+        border-radius: 30px;
+        position: relative;
+
+        /* Small indicator like your screenshot */
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: -6px;
+          width: 8px;
+          height: 22px;
+          background-color: $pr-base;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+
+  .section-title {
+
+  &::after {
+
+    left: 0%;
+    transform: translateX(0%);
+  }
+}
+
+
+}
+
+
+.service-section {
+
+  .service-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  background: #00a884;
+  color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b1b3a;
+  margin-bottom: 12px;
+}
+
+.service-desc {
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0;
+}
+
+}
+
+
+.stats_section {
+
+  background: linear-gradient(106deg, #64a749, #149ab3);
+}
+
+
+.contact-section {
+
+  .c_icon {
+    background-color: $pr-base;
+  }
+}
