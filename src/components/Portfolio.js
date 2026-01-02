@@ -12,14 +12,14 @@ const projects = [
     title: "Moon Travel",
     description: "Flight & Hotel Bookings",
     image: project2,
-    link: "https://example.com/project-2",
+    link: "https://moontravel.co.in/",
   },
   {
     id: 2,
-    title: "Seven Oceans Travel",
+    title: "Vist Dubai",
     description: "Destinations Worldwide",
     image: project3,
-    link: "https://example.com/project-3",
+    link: "https://visitdubai.co.in/",
   },
 
   {
@@ -27,7 +27,7 @@ const projects = [
     title: "SAI ENTERPRISES",
     description: "Telecommunication Tower Installation",
     image: project1,
-    link: "https://example.com/project-1", // project link
+    link: "https://saienter.netlify.app/", // project link
   },
 ];
 
