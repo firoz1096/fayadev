@@ -1,6 +1,6 @@
 .testimonials-section {
   position: relative;
-  background: linear-gradient(106deg, #64a749, #149ab3);
+  background: $gradient-primary;
 }
 
 /* Swiper wrapper */
@@ -21,13 +21,11 @@
   opacity: 0.5;
   transform: scale(0.9);
   transition: all 0.35s ease;
+  
   &.active {
-    // background: rgba($light-base, 0.45);
     background: $te-base;
     opacity: 1;
     transform: scale(1.05);
-    
-  
   }
 
   h5 {
@@ -78,7 +76,7 @@
   top: 20px;
   left: 30px;
   font-size: 50px;
-  color: rgba($light-base, 0.7);
+  color: rgba($pr-base, 0.7);
 
   &.end {
     top: auto;
@@ -89,8 +87,15 @@
 }
 
 /* =======================
-   Pagination
+   Swiper Pagination - UPDATED
 ======================= */
+.testimonials-section {
+  // Override Swiper's default theme color
+  --swiper-theme-color: #{$pr-base}; // Primary color for active bullet
+  --swiper-pagination-color: #{$pr-base}; // Primary color for active bullet
+  --swiper-pagination-bullet-inactive-color: #999; // Gray for inactive bullets
+}
+
 .swiper-pagination {
   position: absolute;
   bottom: 25px !important;
@@ -101,16 +106,44 @@
   gap: 8px;
   z-index: 10;
 
+  // Reset Swiper's default blue color
+  color: $pr-base !important;
+
   &-bullet {
     width: 28px;
     height: 6px;
     border-radius: 5px;
-    background: $light-base;
-    opacity: 0.5;
+    background: #999 !important; // Gray color for inactive bullets
+    opacity: 0.6;
     margin: 0 4px !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     &-active {
+      background: $pr-base !important; // Primary color for active
       opacity: 1;
+      transform: scaleX(1.2);
+      
+      // Additional overrides for Swiper's defaults
+      background-color: $pr-base !important;
+      border-color: $pr-base !important;
+    }
+  }
+}
+
+// Additional strong selector to override Swiper styles
+.testimonials-section {
+  .swiper-pagination-bullet {
+    background: #999 !important; // Gray for all bullets
+    background-color: #999 !important;
+    
+    &-active,
+    &.swiper-pagination-bullet-active {
+      background: $pr-base !important;
+      background-color: $pr-base !important;
     }
   }
 }

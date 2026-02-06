@@ -1,8 +1,8 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {
-  FiMail,
-  FiPhone,
+  // FiMail,
+  // FiPhone,
   FiFacebook,
   FiInstagram,
   FiYoutube,
@@ -185,12 +185,12 @@ useEffect(() => {
                 ))}
               </ul>
 
-              <div className="mb-2">
+              {/* <div className="mb-2">
                 <FiMail /> firoz.webdesigner@gmail.com
               </div>
               <div className="mb-2">
                 <FiPhone /> +91 7275591984
-              </div>
+              </div> */}
 
               <div className="sidebar_social">
                 <Link to="#"><FiFacebook /></Link>

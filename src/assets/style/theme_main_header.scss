@@ -1,7 +1,6 @@
 .bg_home_section {
   position: relative;
-  // background-color: $pr-base;
-  background: linear-gradient(106deg, #49a768, #009999);
+  background: $gradient-primary;
 
 }
 
@@ -40,10 +39,17 @@
       }
 
       .navbar-nav {
-        .nav-link {
-          color: $black;
+      .nav-link {
+        color: $black;
+
+
+        &.active {
+          color: $pr-base;
         }
+
       }
+    }
+
 
       .mobile_btn {
         color: $dark-base;
@@ -247,6 +253,14 @@
 
 .cover-row {
   min-height: 100vh; /* full screen hero section */
+
+
+      @media (min-width: 768px) {
+          min-height: 50vh;
+      }
+
+
+
 }
 
   .cover_wrapper {

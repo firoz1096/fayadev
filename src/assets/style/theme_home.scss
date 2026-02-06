@@ -22,7 +22,8 @@
     position: absolute;
     width: 70px;
     height: 4px;
-    background: linear-gradient(90deg, #64a749, #149ab3);
+    background: $gradient-primary;
+    // background: linear-gradient(90deg, #64a749, #149ab3);
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
@@ -65,7 +66,8 @@
       overflow: hidden;
 
       .progress-bar {
-        background-color: $pr-base;
+        // background-color: $pr-base;
+        background: $gradient-primary;
         border-radius: 30px;
         position: relative;
 
@@ -115,7 +117,8 @@
 .icon-box {
   width: 64px;
   height: 64px;
-  background: #00a884;
+  //background: #00a884;
+  background: $gradient-primary;
   color: #ffffff;
   border-radius: 16px;
   display: flex;
@@ -143,7 +146,7 @@
 
 .stats_section {
 
-  background: linear-gradient(106deg, #64a749, #149ab3);
+  background: $gradient-primary;
 }
 
 

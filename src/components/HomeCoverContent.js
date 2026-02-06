@@ -1,5 +1,5 @@
 import devloper from "../assets/images/developer.png"; 
-import devlopermb from "../assets/images/developer-mb.png"; 
+// import devlopermb from "../assets/images/developer-mb.png"; 
 import GetAQuote from "./GetAQuote";
 
 export default function HomeCoverContent() {
@@ -8,7 +8,7 @@ export default function HomeCoverContent() {
       <div className="row cover-row">
 
         {/* LEFT COLUMN */}
-        <div className="col-lg-6 d-flex align-items-center">
+        <div className="col-md-6 d-flex align-items-end align-items-md-center">
           <div className="cover_wrapper">
             <div className="hello_i">Hello I'm</div>
             <div className="firoz_i">Firoz Khan</div>
@@ -29,9 +29,9 @@ export default function HomeCoverContent() {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="col-lg-6 d-flex align-items-end justify-content-center">
-          <img className="img-fluid developer-img hide_mobile" src={devloper} alt="developer" />
-           <img className="img-fluid developer-img hide_desktop" src={devlopermb} alt="developer" />
+        <div className="col-md-6 d-flex align-items-starts align-md-items-end justify-content-center">
+          <img className="img-fluid developer-img" src={devloper} alt="developer" />
+           {/* <img className="img-fluid developer-img hide_desktop" src={devlopermb} alt="developer" /> */}
         </div>
 
       </div>

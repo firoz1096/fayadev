@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { TfiQuoteRight, TfiQuoteLeft } from "react-icons/tfi";
+import { RiSingleQuotesL, RiSingleQuotesR  } from "react-icons/ri";
 import avtar from '../assets/images/avtar.jpg';
 
 import "swiper/css";
@@ -105,7 +105,7 @@ export default function Testimonials() {
                       isActive ? "active" : ""
                     }`}
                   >
-                    <span className="quote-icon"><TfiQuoteLeft /></span>
+                    <span className="quote-icon"><RiSingleQuotesL /></span>
 
                     <div className="avatar-wrapper mx-auto">
                       <img src={item.image} alt={item.name} />
@@ -116,7 +116,7 @@ export default function Testimonials() {
 
                     <p className="testimonial-text">{item.text}</p>
 
-                    <span className="quote-icon end"><TfiQuoteRight /></span>
+                    <span className="quote-icon end"><RiSingleQuotesR /></span>
                   </div>
                 </div>
               )}

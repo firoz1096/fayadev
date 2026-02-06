@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { FiMousePointer } from "react-icons/fi";
+import { HiArrowRight } from "react-icons/hi2";
 import emailjs from "@emailjs/browser";
 
 
@@ -220,8 +220,8 @@ const handleServiceChange = (service) => {
   /* ===== UI ===== */
   return (
     <>
-      <button className="btn btn-lg btn_quote" onClick={() => setShowModal(true)}>
-        Hire Me <FiMousePointer />
+      <button className="btn btn-lg btn_quote mt-3" onClick={() => setShowModal(true)}>
+        Hire Me <HiArrowRight /> 
       </button>
 
       {showModal && (
