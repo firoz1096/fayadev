@@ -1,5 +1,6 @@
 import CustomInputField from "../components/controls/CustomInputField";
 import { useState } from "react";
+import { FiMapPin, FiMail, FiClock, FiPhone } from "react-icons/fi";
 import { RiSendPlaneFill } from "react-icons/ri";
 import emailjs from "@emailjs/browser";
 
@@ -93,8 +94,8 @@ export default function ContactHome() {
           <h2 className="section-title">Contact</h2>
         </div>
 
-       <div className="row mt-2 justify-content-center">
-          <div className="col-lg-7 mx-auto mb-3 mb-md-0">
+        <div className="row mt-2">
+          <div className="col-lg-7 mb-b mb-md-0">
 
             {successMsg && (
               <div className="alert alert-success text-center">
@@ -172,7 +173,67 @@ export default function ContactHome() {
             </form>
           </div>
 
+          {/* Contact Info (unchanged) */}
+          <div className="col-lg-4 offset-md-1">
+                  
+            <div className="row">
 
+
+                    {/* Phone */}
+                    <div className="col-12 mt-5">
+                      <div className="d-flex align-items-center">
+                        <span className="me-3 rounded p-3 c_icon">
+                          <FiPhone className="text-white fs-4" />
+                        </span>
+                        <div>
+                          <h5>Phone</h5>
+                          <p className="m-0"> +91 7275591984</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Email */}
+                     <div className="col-12 mt-4">
+                      <div className="d-flex align-items-center">
+                          <span className="me-3 rounded p-3 c_icon">
+                          <FiMail className="text-white fs-4" />
+                        </span>
+                        <div>
+                          <h5>Email</h5>
+                          <p className="m-0">firoz.webdesigner@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Phone */}
+                     <div className="col-12 mt-4">
+                      <div className="d-flex align-items-center">
+                        <span className="me-3 rounded p-3 c_icon">
+                          <FiClock className="text-white fs-4" />
+                        </span>
+                        <div>
+                          <h5>Timing</h5>
+                          <p className="m-0"> 10 AM to 7 PM</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Address */}
+                     <div className="col-12 mt-4">
+                      <div className="d-flex align-items-center">
+                        <span className="me-3 rounded p-3 c_icon">
+                          <FiMapPin className="text-white fs-4" />
+                        </span>
+                        <div>
+                          <h5>Location</h5>
+                          <p className="m-0">Uttar Pradesh, India</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
