@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 import Home from './App';
 import ScrollToHash from "./components/ScrollToHash"; //for hash links mannualy
 // import ContactUs from './pages/ContactUs';
+
+import Portofoliopage from './pages/PortfolioPage';
 
 //auth
 import PageNotFound from "./pages/PageNotFound";
@@ -23,6 +24,10 @@ root.render(
         {/* public pages */}
         <Route path="/" element={<Home/>} />
         {/* <Route path="/contact" element={<ContactUs/>} />         */}
+
+        
+          <Route path="/" element={<Home/>} />
+            <Route path="/portfolio" element={<Portofoliopage />} />
      
       
       <Route path="*" element={<PageNotFound />} />
