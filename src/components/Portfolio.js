@@ -17,7 +17,7 @@ const projects = [
     image: visit,
     link: "https://visitdubai.co.in/",
 
-    role: "UI Designer & Full Stack Developer",
+    role: "Web Designer & Full Stack Developer",
     description:
       "Offering Customized Holiday Packages, UAE Activities, and Visa Services.",
     technologies: [
@@ -31,32 +31,32 @@ const projects = [
     b2b: true,
   },
 
-  {
-    id: 2,
-    title: "Go Cozmo",
-    category: "B2C, Travel & Tourism Platform",
-    image: b2ccozmo,
-    link: "https://www.gocozmo.com/",
+  // {
+  //   id: 2,
+  //   title: "Go Cozmo",
+  //   category: "B2C, Travel & Tourism Platform",
+  //   image: b2ccozmo,
+  //   link: "https://www.gocozmo.com/",
 
-    role: "UI Designer & UI Developer",
+  //   role: "UI Designer & UI Developer",
 
-    description:
-      "Comprehensive Travel Services Including Flight Bookings, Holiday Packages, Visa Assistance and UAE Activities.",
+  //   description:
+  //     "Comprehensive Travel Services Including Flight Bookings, Holiday Packages, Visa Assistance and UAE Activities.",
 
-    technologies: [
-      "Photoshop",
-      "Bootstrap",
-      "JavaScript",
-      "jQuery",
-      "Sass",
-      "HTML5",
-      "CSS3",
+  //   technologies: [
+  //     "Photoshop",
+  //     "Bootstrap",
+  //     "JavaScript",
+  //     "jQuery",
+  //     "Sass",
+  //     "HTML5",
+  //     "CSS3",
 
-    ],
+  //   ],
 
-    enterprise: false,
-    b2b: false,
-  },
+  //   enterprise: false,
+  //   b2b: false,
+  // },
 
   {
     id: 3,
@@ -85,55 +85,33 @@ const projects = [
     b2b: false,
   },
 
-  {
-    id: 4,
-    title: "APP - Travel Technology Solution",
-    category: "B2B, Travel & Tourism Platform",
-    image: b2bpct,
-    link: "https://app.pierofcloudtech.com/",
+  // {
+  //   id: 4,
+  //   title: "APP - Travel Technology Solution",
+  //   category: "B2B, Travel & Tourism Platform",
+  //   image: b2bpct,
+  //   link: "https://app.pierofcloudtech.com/",
 
-    role: "Designer & UI Developer",
+  //   role: "UI Designer & UI Developer",
 
-    description:
-      "Flight Tickets Online. Book Air India Flight Tickets, Jet Airways Flight Tickets, Indigo Flight Tickets online at cheap price.",
+  //   description:
+  //     "Flight Tickets Online. Book Air India Flight Tickets, Jet Airways Flight Tickets, Indigo Flight Tickets online at cheap price.",
 
-    technologies: [
-      "React.js",
-      "Sass",
-      "Bootstrap",
-      "Photoshop",
-      "CSS3",
-      "react-icons",
-    ],
+  //   technologies: [
+  //     "React.js",
+  //     "Sass",
+  //     "Bootstrap",
+  //     "Photoshop",
+  //     "CSS3",
+  //     "react-icons",
+  //   ],
 
-    enterprise: false,
-    b2b: false,
-  },
+  //   enterprise: false,
+  //   b2b: false,
+  // },
 
 
-    {
-    id: 5,
-    title: "Pier of Cloud Tech Inc",
-    category: "Travel Technology Solutions Provider",
-    image: pct,
-    link: "https://pierofcloudtech.com/",
 
-    role: "Designer & UI Developer",
-
-    description:
-      "Delivering world-class Travel Technology solutions that builds your brand, business and customer relationship.",
-
-    technologies: [
-      "React.js",
-      "Sass",
-      "Bootstrap",
-      "Photoshop",
-      "CSS3",
-    ],
-
-    enterprise: false,
-    b2b: false,
-  },
 
 
 
@@ -162,7 +140,7 @@ export default function Portfolio() {
               className="col-md-6"
               key={project.id}
             >
-              <div className="card border-0 shadow-sm h-100">
+              <div className="card shadow-sm h-100 bg-light border">
 
                 <Link
                   to={project.link}
